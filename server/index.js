@@ -3,6 +3,7 @@ const create = require('./routes/add_weight');
 const fetch = require('./routes/get_data');
 const users = require('./routes/users');
 const bodyParser = require('body-parser');
+const path = require('path');
 const cors = require('cors');
 
 const { drop, createTable, clearTable } = require('./mysql/mysql');
@@ -11,6 +12,12 @@ const { drop, createTable, clearTable } = require('./mysql/mysql');
 // clearTable('weight');
 // createUsersTable();
 const app = express();
+
+app.use(express.static(path.join(__dirname, '../', 'client', 'build', 'index.html')));
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../', 'build', 'index.html'));
+});
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -24,6 +31,8 @@ app.get('/', (req, res) => {
   console.log('reached server');
 });
 
-app.listen(5000, () => {
-  console.log('listening on server 5000');
-});
+const portConnection = process.env.PORT || 5000;
+
+app.listen(portConnection);
+
+console.log(`Server connected to port ${portConnection}`);

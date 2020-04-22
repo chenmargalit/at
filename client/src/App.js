@@ -14,10 +14,10 @@ function App() {
       <BrowserRouter>
         <Fragment>
           <Nav />
-          <Route path='/at/home' exact component={Home} />
-          <Route path='/at/add-check' component={Form} />
-          <Route path='/at/signin' component={Signin} />
-          <Route path='/at/signup' component={Signup} />
+          <Route path='/home' exact component={Home} />
+          <Route path='/add-check' component={Form} />
+          <Route path='/signin' component={Signin} />
+          <Route path='/signup' component={Signup} />
         </Fragment>
       </BrowserRouter>
       {/* <Playground /> */}

@@ -5,7 +5,7 @@ export const addData = (data, reDirect) => async (dispatch) => {
   try {
     const res = await axios.post('http://localhost:5000/create/add_weight', data);
     console.log(res.data);
-    reDirect('/at/home');
+    reDirect('/home');
   } catch (e) {
     e.response && console.log(e.response.data);
   }

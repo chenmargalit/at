@@ -18,7 +18,7 @@ export const signin = (data, reDirect) => async (dispatch) => {
     const res = await axios.post('http://localhost:5000/users/signIn', data);
     window.localStorage.setItem('token', res.data.token);
     // dispatch({ type: USER_AUTH, payload: res.data.email });
-    reDirect('/at/home');
+    reDirect('/home');
   } catch (e) {
     if (e.response) {
       return (

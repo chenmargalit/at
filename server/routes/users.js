@@ -46,4 +46,8 @@ router.post('/signIn', verifyPassword, async (req, res) => {
   }
 });
 
+router.get('/test', (req, res) => {
+  res.send('works');
+});
+
 module.exports = router;
