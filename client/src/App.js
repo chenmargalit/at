@@ -9,7 +9,6 @@ import Nav from './components/Nav';
 // import Playground from './components/Playground';
 
 function App() {
-  console.log('app is working');
   return (
     <div>
       <BrowserRouter>

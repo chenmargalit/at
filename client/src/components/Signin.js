@@ -4,6 +4,7 @@ import GenericForm from './GenericForm';
 import { signin } from '../actions/usersActions';
 
 const Signin = (props) => {
+  console.log('signin working');
   return (
     <div style={{ margin: 30 }}>
       <GenericForm email password action={signin} reDirect={props.history.push} />
