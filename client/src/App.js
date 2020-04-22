@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Fragment>
           <Nav />
-          <Route path='/at/' exact component={Home} />
+          <Route path='/at/home' exact component={Home} />
           <Route path='/at/add-check' component={Form} />
           <Route path='/at/signin' component={Signin} />
           <Route path='/at/signup' component={Signup} />

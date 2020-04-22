@@ -9,7 +9,7 @@ const Signin = (props) => {
     <div style={{ margin: 30 }}>
       <GenericForm email password action={signin} reDirect={props.history.push} />
       <h3>
-        Dont have an account ? sign up <NavLink to='/signup'>Here</NavLink>
+        Dont have an account ? sign up <NavLink to='/at/signup'>Here</NavLink>
       </h3>
     </div>
   );
