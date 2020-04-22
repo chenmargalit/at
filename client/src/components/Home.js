@@ -5,7 +5,7 @@ import { Table, Spin, Alert } from 'antd';
 import './comp.css';
 
 const Home = () => {
-  console.log('home is running');
+  console.log('home 123 is running');
   const [loading, setLoading] = useState(false);
   const [emoji, setEmoji] = useState('');
   // const [errors, setErrors] = useState(false);
