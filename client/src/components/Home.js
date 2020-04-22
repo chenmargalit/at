@@ -3,9 +3,9 @@ import { getData } from '../actions/index';
 import { useSelector, useDispatch } from 'react-redux';
 import { Table, Spin, Alert } from 'antd';
 import './comp.css';
-import axios from 'axios';
 
 const Home = () => {
+  console.log('home is running');
   const [loading, setLoading] = useState(false);
   const [emoji, setEmoji] = useState('');
   // const [errors, setErrors] = useState(false);
