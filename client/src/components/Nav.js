@@ -7,14 +7,14 @@ const Nav = () => {
     return (
       <Menu mode='horizontal' selectedKeys={window.location.pathname}>
         <Menu.Item key={'/signin'}>
-          <NavLink to='/signin'>Signin</NavLink>
+          <NavLink to='/at/signin'>Signin</NavLink>
           {/* <NavLink to='/signin'>{location != '/signup' ? 'signin' : 'signup'}</NavLink> */}
         </Menu.Item>
         <Menu.Item key='/home'>
-          <NavLink to='/home'>Home</NavLink>
+          <NavLink to='/at/home'>Home</NavLink>
         </Menu.Item>
         <Menu.Item key='/add-check'>
-          <NavLink to='/add-check'>Add check</NavLink>
+          <NavLink to='/at/add-check'>Add check</NavLink>
         </Menu.Item>
       </Menu>
     );
